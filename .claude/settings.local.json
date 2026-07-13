@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(dir \"C:\\\\Code\\\\react-code\\\\react-with-tailwind-aws-quiz\\\\src\" /s /b)",
+      "Bash(cat:*)"
+    ]
+  }
+}
