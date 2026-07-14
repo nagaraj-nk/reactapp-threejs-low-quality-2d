@@ -1,0 +1,916 @@
+{
+  "name": "Kural 772 — the spear that missed",
+  "canvas": {
+    "width": 120,
+    "height": 64,
+    "scale": 6
+  },
+  "timeline": {
+    "fps": 12,
+    "duration": 10,
+    "loop": true
+  },
+  "palette": {
+    "h": "#2b1a10",
+    "k": "#d9a066",
+    "t": "#b91c1c",
+    "w": "#f3f4f6",
+    "o": "#1f2937",
+    "n": "#8b5a2b",
+    "b": "#d1d5db",
+    "s": "#92400e",
+    "r": "#a16207",
+    "e": "#6b7280",
+    "d": "#4b5563",
+    "g": "#15803d",
+    "m": "#5b3a1a",
+    "y": "#fef08a"
+  },
+  "background": [
+    {
+      "color": "#bae6fd",
+      "x": 0,
+      "y": 0,
+      "w": 120,
+      "h": 50
+    },
+    {
+      "color": "#65a30d",
+      "x": 0,
+      "y": 50,
+      "w": 120,
+      "h": 4
+    },
+    {
+      "color": "#4d7c0f",
+      "x": 0,
+      "y": 54,
+      "w": 120,
+      "h": 10
+    }
+  ],
+  "sprites": {
+    "hunter": {
+      "offsetX": -3,
+      "offsetY": 0,
+      "pivot": 12,
+      "frames": {
+        "aim": [
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......kkkkkkkk..n..",
+          "......kkkkkkkk.nn..",
+          "......kkkkkokk.nn..",
+          "......kkkkkkkk..n..",
+          "......kkkkkkkk..n..",
+          "......tttttttt..n..",
+          "......ttttttbkkkb..",
+          "......tttttttkkkn..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          "......tttttttt.nn..",
+          "......tttttttt.nn..",
+          ".....wwwwwwwww..n..",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          "......kkk..kkk.....",
+          "......kkk..kkk.....",
+          ".....oooo..oooo....",
+          ".....oooo..oooo...."
+        ],
+        "shot": [
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk..n..",
+          "......kkkkkokk..n..",
+          "......kkkkkkkk..n..",
+          "......kkkkkkkk..n..",
+          "......tttttttt..n..",
+          "......tttttttkkkn..",
+          "......tttttttkkkn..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          "......tttttttt..n..",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          "......kkk..kkk.....",
+          "......kkk..kkk.....",
+          ".....oooo..oooo....",
+          ".....oooo..oooo...."
+        ],
+        "throw1": [
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk.....",
+          "......kkkkkokk.....",
+          "sssssssssbbbkk.....",
+          "sssssssssbbbkk.....",
+          "......tttttttt.....",
+          "......kktttttt.....",
+          "......kktttttt.....",
+          "......kktttttt.....",
+          "......kktttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          "......kkk..kkk.....",
+          "......kkk..kkk.....",
+          ".....oooo..oooo....",
+          ".....oooo..oooo...."
+        ],
+        "throw2": [
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk.....",
+          "......kkkkkokk.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk.....",
+          "......tttttttkkkk..",
+          "......tttttttkkkk..",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          "......kkk..kkk.....",
+          "......kkk..kkk.....",
+          ".....oooo..oooo....",
+          ".....oooo..oooo...."
+        ],
+        "stand": [
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......hhhhhhhh.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk.....",
+          "......kkkkkokk.....",
+          "......kkkkkkkk.....",
+          "......kkkkkkkk.....",
+          "......tttttttt.....",
+          "......tttttttkk....",
+          "......tttttttkk....",
+          "......tttttttkk....",
+          "......tttttttkk....",
+          "......tttttttkk....",
+          "......tttttttt.....",
+          "......tttttttt.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          ".....wwwwwwwww.....",
+          "......kkk..kkk.....",
+          "......kkk..kkk.....",
+          ".....oooo..oooo....",
+          ".....oooo..oooo...."
+        ]
+      }
+    },
+    "rabbit": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 10,
+      "frames": {
+        "hop1": [
+          ".......r..",
+          ".......r..",
+          "......rrr.",
+          ".rrrrrrro.",
+          "rrrrrrrrr.",
+          ".rrrrrr...",
+          ".rrrrrr...",
+          ".rr..rr..."
+        ],
+        "hop2": [
+          ".......r..",
+          ".......r..",
+          "......rrr.",
+          ".rrrrrrro.",
+          "rrrrrrrrr.",
+          ".rrrrrr...",
+          ".rrrrrr...",
+          "..rrrr...."
+        ]
+      }
+    },
+    "elephant": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 34,
+      "frames": {
+        "stand1": [
+          "..................................",
+          "..................................",
+          "..................................",
+          "..................................",
+          "..................................",
+          "..eeeeeeeeee......................",
+          "..edddddeeeeeeeeeeeeeeeeeeeee.....",
+          "..edddddeeeeeeeeeeeeeeeeeeeee.....",
+          "..edddddeeeeeeeeeeeeeeeeeeeeee....",
+          "..eddoddeeeeeeeeeeeeeeeeeeeeee....",
+          "..edddddeeeeeeeeeeeeeeeeeeeeee....",
+          "..edddddeeeeeeeeeeeeeeeeeeeeee....",
+          ".eedddddeeeeeeeeeeeeeeeeeeeeee....",
+          ".eeeeeeeeeeeeeeeeeeeeeeeeeeeee....",
+          ".eeeeeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".ebbbeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".eeeeeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".eee.......eeeeeeeeeeeeeeeeee.....",
+          "eeee........eeeee..eeeee.eeee.....",
+          "eeee........eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee....."
+        ],
+        "stand2": [
+          "..................................",
+          "..................................",
+          "..................................",
+          "..................................",
+          "..................................",
+          "..eeeeeeeeee......................",
+          "..ddddddeeeeeeeeeeeeeeeeeeeee.....",
+          "..ddddddeeeeeeeeeeeeeeeeeeeee.....",
+          "..ddddddeeeeeeeeeeeeeeeeeeeeee....",
+          "..dddoddeeeeeeeeeeeeeeeeeeeeee....",
+          "..ddddddeeeeeeeeeeeeeeeeeeeeee....",
+          "..ddddddeeeeeeeeeeeeeeeeeeeeee....",
+          ".eddddddeeeeeeeeeeeeeeeeeeeeee....",
+          ".eddddddeeeeeeeeeeeeeeeeeeeeee....",
+          ".eeeeeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".ebbbeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".eeeeeeeeeeeeeeeeeeeeeeeeeeee.....",
+          ".eee.......eeeeeeeeeeeeeeeeee.....",
+          "eeee........eeeee..eeeee.eeee.....",
+          "eeee........eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee.....",
+          "............eeeee..eeeee.eeee....."
+        ]
+      }
+    },
+    "tree": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 20,
+      "frames": {
+        "tree": [
+          "......gggggggg......",
+          "......gggggggg......",
+          "...gggggggggggggg...",
+          "...gggggggggggggg...",
+          "...gggggggggggggg...",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          ".gggggggggggggggggg.",
+          "...gggggggggggggg...",
+          "...gggggggggggggg...",
+          "...gggggggggggggg...",
+          "....................",
+          "....................",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........",
+          "........mmmm........"
+        ]
+      }
+    },
+    "arrow": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 8,
+      "frames": {
+        "fly": [
+          "ww......",
+          "ssssssbb",
+          "ww......"
+        ]
+      }
+    },
+    "spear": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 12,
+      "frames": {
+        "fly": [
+          "..........b.",
+          "sssssssssbbb",
+          "..........b."
+        ],
+        "stuck": [
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".ss.",
+          ".bb.",
+          ".bb."
+        ]
+      }
+    },
+    "puff": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivot": 6,
+      "frames": {
+        "puff": [
+          "..yy..",
+          "..yy..",
+          "yyyyyy",
+          "yyyyyy",
+          "..yy..",
+          "..yy.."
+        ]
+      }
+    }
+  },
+  "actors": [
+    {
+      "sprite": "tree",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 54
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 16
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "tree"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": true
+          },
+          {
+            "t": 4.6000000000000005,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "tree",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 76
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 16
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "tree"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": true
+          },
+          {
+            "t": 4.6000000000000005,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "tree",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 98
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 16
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "tree"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": true
+          },
+          {
+            "t": 4.6000000000000005,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "elephant",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 76
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 26
+          }
+        ],
+        "pose": [
+          {
+            "t": 4.7,
+            "v": "stand1"
+          },
+          {
+            "t": 5.4,
+            "v": "stand2"
+          },
+          {
+            "t": 6.1,
+            "v": "stand1"
+          },
+          {
+            "t": 6.8,
+            "v": "stand2"
+          },
+          {
+            "t": 7.5,
+            "v": "stand1"
+          },
+          {
+            "t": 8.2,
+            "v": "stand2"
+          },
+          {
+            "t": 8.9,
+            "v": "stand1"
+          },
+          {
+            "t": 9.6,
+            "v": "stand2"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": false
+          },
+          {
+            "t": 4.7,
+            "v": true
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "rabbit",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 96
+          },
+          {
+            "t": 2.3,
+            "v": 88
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 42
+          },
+          {
+            "t": 0.15,
+            "v": 40
+          },
+          {
+            "t": 0.3,
+            "v": 42
+          },
+          {
+            "t": 0.45,
+            "v": 40
+          },
+          {
+            "t": 0.6,
+            "v": 42
+          },
+          {
+            "t": 0.75,
+            "v": 40
+          },
+          {
+            "t": 0.9,
+            "v": 42
+          },
+          {
+            "t": 1.05,
+            "v": 40
+          },
+          {
+            "t": 1.2,
+            "v": 42
+          },
+          {
+            "t": 1.35,
+            "v": 40
+          },
+          {
+            "t": 1.5,
+            "v": 42
+          },
+          {
+            "t": 1.65,
+            "v": 40
+          },
+          {
+            "t": 1.8,
+            "v": 42
+          },
+          {
+            "t": 1.95,
+            "v": 40
+          },
+          {
+            "t": 2.1,
+            "v": 42
+          },
+          {
+            "t": 2.25,
+            "v": 40
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "hop1"
+          },
+          {
+            "t": 0.15,
+            "v": "hop2"
+          },
+          {
+            "t": 0.3,
+            "v": "hop1"
+          },
+          {
+            "t": 0.45,
+            "v": "hop2"
+          },
+          {
+            "t": 0.6,
+            "v": "hop1"
+          },
+          {
+            "t": 0.75,
+            "v": "hop2"
+          },
+          {
+            "t": 0.9,
+            "v": "hop1"
+          },
+          {
+            "t": 1.05,
+            "v": "hop2"
+          },
+          {
+            "t": 1.2,
+            "v": "hop1"
+          },
+          {
+            "t": 1.35,
+            "v": "hop2"
+          },
+          {
+            "t": 1.5,
+            "v": "hop1"
+          },
+          {
+            "t": 1.65,
+            "v": "hop2"
+          },
+          {
+            "t": 1.8,
+            "v": "hop1"
+          },
+          {
+            "t": 1.95,
+            "v": "hop2"
+          },
+          {
+            "t": 2.1,
+            "v": "hop1"
+          },
+          {
+            "t": 2.25,
+            "v": "hop2"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": true
+          },
+          {
+            "t": 2.3,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "hunter",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 8
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 27
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "aim"
+          },
+          {
+            "t": 1.5,
+            "v": "shot"
+          },
+          {
+            "t": 2.5999999999999996,
+            "v": "stand"
+          },
+          {
+            "t": 4.8,
+            "v": "throw1"
+          },
+          {
+            "t": 5.65,
+            "v": "throw2"
+          },
+          {
+            "t": 7.75,
+            "v": "stand"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": true
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "arrow",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 1.5,
+            "v": 22
+          },
+          {
+            "t": 2.3,
+            "v": 88
+          }
+        ],
+        "y": [
+          {
+            "t": 1.5,
+            "v": 38
+          },
+          {
+            "t": 2.3,
+            "v": 44
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "fly"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": false
+          },
+          {
+            "t": 1.5,
+            "v": true
+          },
+          {
+            "t": 2.3,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "puff",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 88
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 41
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "puff"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": false
+          },
+          {
+            "t": 2.3,
+            "v": true
+          },
+          {
+            "t": 2.65,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "spear",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 5.65,
+            "v": 22
+          },
+          {
+            "t": 7.35,
+            "v": 112
+          }
+        ],
+        "y": [
+          {
+            "t": 5.65,
+            "v": 32
+          },
+          {
+            "t": 6.5,
+            "v": 18
+          },
+          {
+            "t": 7.35,
+            "v": 44
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "fly"
+          },
+          {
+            "t": 7.35,
+            "v": "stuck"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": false
+          },
+          {
+            "t": 5.65,
+            "v": true
+          },
+          {
+            "t": 7.35,
+            "v": false
+          }
+        ]
+      }
+    },
+    {
+      "sprite": "spear",
+      "faceRight": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 112
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 36
+          }
+        ],
+        "pose": [
+          {
+            "t": 0,
+            "v": "stuck"
+          }
+        ],
+        "visible": [
+          {
+            "t": 0,
+            "v": false
+          },
+          {
+            "t": 7.35,
+            "v": true
+          }
+        ]
+      }
+    }
+  ]
+}
