@@ -55,6 +55,7 @@ function Navbar() {
     { to: '/', label: 'Home' },
     { to: '/scene', label: 'Scene' },
     { to: '/pixels', label: 'Pixels' },
+    { to: '/hd', label: 'HD' },
   ]
 
   return (

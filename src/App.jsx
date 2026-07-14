@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Scene from './pages/Scene'
 import Pixels from './pages/Pixels'
+import HDPixels from './pages/HDPixels'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/scene" element={<Scene />} />
             <Route path="/pixels" element={<Pixels />} />
+            <Route path="/hd" element={<HDPixels />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>

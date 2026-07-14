@@ -3,13 +3,37 @@
   "canvas": {
     "width": 120,
     "height": 64,
-    "scale": 6
+    "scale": 6,
+    "unit": 10
   },
   "timeline": {
     "fps": 12,
     "duration": 10,
     "loop": true
   },
+  "captions": [
+    {
+      "text": "கான முயலெய்த அம்பினில் யானை",
+      "at": 0.4,
+      "until": 4.3,
+      "pos": "top",
+      "size": 30
+    },
+    {
+      "text": "பிழைத்தவேல் ஏந்தல் இனிது.",
+      "at": 4.9,
+      "until": 9.8,
+      "pos": "top",
+      "size": 30
+    },
+    {
+      "text": "யானை மேல் எறிந்து தவறிய வேல், முயலை எய்த அம்பை விட இனிது.",
+      "at": 7.9,
+      "until": 10,
+      "pos": "bottom",
+      "size": 20
+    }
+  ],
   "palette": {
     "h": "#2b1a10",
     "k": "#d9a066",
@@ -29,6 +53,7 @@
   "background": [
     {
       "color": "#bae6fd",
+      "gradient": ["#e0f2fe", "#7dd3fc"],
       "x": 0,
       "y": 0,
       "w": 120,
@@ -36,6 +61,7 @@
     },
     {
       "color": "#65a30d",
+      "gradient": ["#86efac", "#65a30d"],
       "x": 0,
       "y": 50,
       "w": 120,
