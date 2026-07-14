@@ -53,7 +53,8 @@ function Navbar() {
 
   const navLinks = [
     { to: '/', label: 'Home' },
-    { to: '/history', label: 'History' },
+    { to: '/scene', label: 'Scene' },
+    { to: '/pixels', label: 'Pixels' },
   ]
 
   return (
@@ -61,7 +62,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-14 items-center">
           <div className="flex items-center">
-            <Link to="/" className="font-bold text-lg text-gray-900 dark:text-white">AWS Quiz</Link>
+            <Link to="/" className="font-bold text-lg text-gray-900 dark:text-white">My App</Link>
             <div className="hidden md:flex items-center ml-6 space-x-1">
               {navLinks.map((link) => (
                 <Link
